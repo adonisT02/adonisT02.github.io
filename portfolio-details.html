@@ -4,18 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - MyResume Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Case Study — Adonis T Mushonga</title>
+  <meta content="Project case study — Adonis T Mushonga, Full-Stack Software Engineer." name="description">
+  <meta content="Adonis Mushonga, case study, project, full-stack engineer" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,20 +30,17 @@
 <body class="portfolio-details-page">
 
   <header id="header" class="header d-flex flex-column justify-content-center">
-
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
@@ -55,155 +51,432 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current" id="cs-breadcrumb">Case Study</li>
           </ol>
         </nav>
-        <h1>Portfolio Details</h1>
+        <h1 id="cs-title">Case Study</h1>
       </div>
     </div><!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
       <div class="container" data-aos="fade-up">
 
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              },
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/app-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/product-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/branding-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/books-1.jpg" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
+        <div class="cs-hero">
+          <img id="cs-image" src="assets/img/portfolio/lads.svg" alt="Project">
         </div>
 
-        <div class="row justify-content-between gy-4 mt-4">
+        <div class="row justify-content-between gy-4">
 
           <div class="col-lg-8" data-aos="fade-up">
             <div class="portfolio-description">
-              <h2>This is an example of portfolio details</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-              <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
-              </p>
+              <p class="lead" id="cs-tagline"></p>
 
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <div>
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
+              <div class="cs-section">
+                <h3>Overview</h3>
+                <div id="cs-overview"></div>
               </div>
 
-              <p>
-                Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
-              </p>
+              <div class="cs-section" id="cs-metrics-wrap">
+                <h3>At a glance</h3>
+                <div class="cs-metrics" id="cs-metrics"></div>
+              </div>
 
-              <p>
-                Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
-              </p>
+              <div class="cs-section">
+                <h3>Highlights &amp; My Contribution</h3>
+                <ul class="cs-highlights" id="cs-highlights"></ul>
+              </div>
 
+              <a href="index.html#portfolio" class="btn-outline-custom"><i class="bi bi-arrow-left"></i> Back to all projects</a>
             </div>
           </div>
 
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="cs-info">
+              <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong> Web design</li>
-                <li><strong>Client</strong> ASU Company</li>
-                <li><strong>Project date</strong> 01 March, 2020</li>
-                <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+                <li><strong>Category</strong> <span id="cs-category"></span></li>
+                <li><strong>My Role</strong> <span id="cs-role"></span></li>
+                <li><strong>Timeline</strong> <span id="cs-timeline"></span></li>
+                <li><strong>Client / Context</strong> <span id="cs-client"></span></li>
+                <li><strong>Status</strong> <span id="cs-status"></span></li>
+                <li>
+                  <strong>Tech Stack</strong>
+                  <div class="cs-stack" id="cs-stack"></div>
+                </li>
+                <li id="cs-link-wrap"><strong>Links</strong> <span id="cs-link"></span></li>
               </ul>
             </div>
           </div>
 
         </div>
-
       </div>
-
     </section><!-- /Portfolio Details Section -->
 
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <h3 class="sitename">Brandon Johnson</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3 class="sitename">Adonis T Mushonga</h3>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/adonisT02" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/adonisT02" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:adonistmushonga@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
-        </div>
-        
-      </div>
+      <p class="mt-3">&copy; 2026 Adonis T Mushonga. All Rights Reserved.</p>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
+  <!-- Case-study data + renderer -->
+  <script>
+    const PROJECTS = {
+      "lads": {
+        title: "LADS Local Authority ERP",
+        tagline: "An enterprise revenue and ERP platform that runs the day-to-day operations of 60+ municipalities across Zimbabwe.",
+        category: "Enterprise ERP · Web",
+        role: "Software Developer (15+ engineer team)",
+        timeline: "2021 – Present",
+        client: "LADS Africa — 60+ local authorities",
+        status: "In production",
+        stack: ["Laravel 10", "Livewire 3", "AdminLTE", "Bootstrap 5", "MySQL", "Queues / Batch Jobs", "DomPDF", "Laravel Excel", "Sanctum", "Google2FA"],
+        overview: [
+          "LADS is a large municipal revenue-management and ERP platform that handles the full operational and financial life of a town or city council — billing and receipting for ratepayers, business licensing, land and lease management, cemeteries, markets, building control, procurement, HR, CRM, and statutory financial reporting.",
+          "It is one of the largest systems I have worked on, spanning 45+ functional modules and thousands of views, and it is actively used by more than 60 councils nationwide."
+        ],
+        metrics: [
+          { n: "60+", l: "Councils in production" },
+          { n: "45+", l: "Functional modules" },
+          { n: "1,000+", l: "Eloquent models" },
+          { n: "2,900+", l: "Blade views" }
+        ],
+        highlights: [
+          "Integrated ZIMRA fiscalization (fiscal device management, signing and fiscal-service layer) so council receipts are tax-compliant.",
+          "Built asynchronous report generation on Laravel queues with parallel batch jobs, AJAX progress polling, and multi-format export (browser / Excel / PDF).",
+          "Contributed to the inventory-accounting subsystem — valuation, aging reports, and general-ledger integration.",
+          "Implemented multi-currency procurement and budgeting, plus QR/barcode generation and Google 2FA security.",
+          "Owned features end to end within a modular architecture, from database schema and Livewire components to PDF outputs and documentation."
+        ],
+        link: null
+      },
+      "mineraerp": {
+        title: "MineraERP — Mining Enterprise ERP",
+        tagline: "A modular ERP for the Minerals Marketing Corporation of Zimbabwe, with a compliance-grade accounting core.",
+        category: "Enterprise ERP · Web",
+        role: "Software Developer",
+        timeline: "Recent (ongoing)",
+        client: "Minerals Marketing Corporation of Zimbabwe (MMCZ)",
+        status: "In production",
+        stack: ["Laravel 13", "Livewire 4", "Tailwind CSS", "Fortify", "Sanctum", "ApexCharts", "DomPDF", "PhpWord", "Pusher / WebSockets", "Playwright"],
+        overview: [
+          "MineraERP manages MMCZ's mineral-marketing and export business — producers, mineral sales and exports, contracts, treasury and finance, HR, procurement, and regulatory compliance — built on a modern modular Laravel architecture where each business area is a self-contained module.",
+          "The finance domain is the deepest part of the system, reusing a single journal → ledger → sub-ledger posting chain across budgeting, procurement, receipting, and treasury."
+        ],
+        metrics: [
+          { n: "4", l: "Business modules" },
+          { n: "150+", l: "Controllers" },
+          { n: "2,100+", l: "Blade views" },
+          { n: "13", l: "Laravel version" }
+        ],
+        highlights: [
+          "Worked on an IAS 16 asset-revaluation accounting engine — tracking cumulative revaluation surplus vs. prior P&L, with OCI-vs-P&L decision logic and a per-asset revaluation history for audit compliance.",
+          "Contributed to the Treasury & Investments module (portfolios, private equity, property, stock-market, counterparties, revaluation and returns).",
+          "Helped deliver a ZIMRA / ASYCUDA customs-export integration for bill-of-entry submission and clearance, reusing verified data to avoid duplicate capture.",
+          "Built KYC automation for mineral, diamond and precious-stone exporters, with a role-based risk register and heat-map analytics.",
+          "Real-time features via Laravel Echo / Pusher, automated backups, and extensive PDF / Word / Excel document generation."
+        ],
+        link: null
+      },
+      "mmcz-portal": {
+        title: "MMCZ Producer Portal",
+        tagline: "The external-facing portal for MMCZ — combining a CMS website, e-commerce, chatbot, and in-app video meetings.",
+        category: "Web Portal · Real-time",
+        role: "Software Developer",
+        timeline: "Recent (ongoing)",
+        client: "Minerals Marketing Corporation of Zimbabwe (MMCZ)",
+        status: "In production",
+        stack: ["Laravel 10", "Livewire 3", "Tailwind CSS", "BotMan", "WebRTC", "Sanctum", "DomPDF"],
+        overview: [
+          "The MMCZ Portal is the customer- and producer-facing companion to MineraERP. It brings together a CMS-managed public website, an e-commerce shop with a producer offer/negotiation flow, a chatbot with human live-chat handoff, and built-in video meetings and calls.",
+          "Access is segmented by role — producer, client, internal user, and admin — each with its own tailored area."
+        ],
+        metrics: [
+          { n: "4", l: "Role-based portals" },
+          { n: "130+", l: "Models" },
+          { n: "WebRTC", l: "Video / calls" },
+          { n: "BotMan", l: "Chatbot" }
+        ],
+        highlights: [
+          "Implemented in-app WebRTC video meetings and 1:1 calls — signaling, participant heartbeats/polling, and call recordings.",
+          "Built a BotMan chatbot with a human live-chat handoff, assistant availability management, and persisted chat history.",
+          "Delivered a public e-commerce experience with a producer↔client offer and negotiation workflow.",
+          "CMS-driven public site with customer/employee surveys and PDF report generation.",
+          "Role-based access control with forced-password-change and per-role middleware."
+        ],
+        link: null
+      },
+      "minutepark": {
+        title: "MinutePark — Parking Enforcement",
+        tagline: "An offline-first mobile system that lets council parking attendants work reliably with no connectivity.",
+        category: "Mobile · Full-Stack",
+        role: "Software Developer (mobile + backend)",
+        timeline: "2021 – Present",
+        client: "Municipal councils",
+        status: "In production (v3.9.5)",
+        stack: ["Flutter", "Dart", "ObjectBox", "WorkManager", "Laravel 10", "Octane", "Sanctum", "ESC/POS Printing", "mobile_scanner"],
+        overview: [
+          "MinutePark is a smart parking-enforcement product for municipal councils. Attendants check vehicles in, issue tickets and booklets, bill offences, manage arrears, run spot checks, and reconcile takings through cash-ups — all designed to work offline on handheld devices with Bluetooth thermal printing and QR scanning.",
+          "The engineering challenge is reliability without connectivity: the app is offline-first, and syncs two-way with a Laravel API when a connection returns."
+        ],
+        metrics: [
+          { n: "v3.9.5", l: "Mature product" },
+          { n: "~22", l: "App screens" },
+          { n: "46", l: "API endpoints" },
+          { n: "45", l: "Backend models" }
+        ],
+        highlights: [
+          "Architected the offline-first data layer with ObjectBox and a WorkManager background isolate that performs periodic two-way sync.",
+          "Designed eventual-consistency sync — records created offline are tagged and pushed to dedicated sync endpoints once connectivity returns.",
+          "Integrated Bluetooth ESC/POS thermal receipt printing and QR/barcode scanning for on-the-spot ticketing.",
+          "Implemented offline bcrypt login plus Sanctum token auth, with the backend multi-tenant per council.",
+          "Modelled multi-currency payment methods with per-currency rates and discounts, reconciled through cash-ups."
+        ],
+        link: null
+      },
+      "trade": {
+        title: "Trade — Algorithmic Trading Bot",
+        tagline: "An event-driven trading platform with real broker integrations, backtesting, and live streaming.",
+        category: "AI & Data · Full-Stack",
+        role: "Personal project",
+        timeline: "Personal / independent",
+        client: "Independent build",
+        status: "Personal project",
+        stack: ["FastAPI", "Python 3.11", "React", "Tailwind CSS", "MySQL", "Alembic", "Redis", "Docker", "nginx"],
+        overview: [
+          "Trade is an automated trading platform for Deriv synthetic indices and Alpaca US equities, with a paper/demo fallback for safe testing. It is built around a clean, event-driven architecture with clearly separated concerns.",
+          "The system covers the full trading lifecycle — market data, strategy, backtesting, risk, execution, journaling, and portfolio tracking — behind a JWT-secured API and real-time WebSocket stream."
+        ],
+        metrics: [
+          { n: "2", l: "Broker integrations" },
+          { n: "Redis", l: "Event bus" },
+          { n: "WS", l: "Live streaming" },
+          { n: "Docker", l: "Deployment" }
+        ],
+        highlights: [
+          "Designed an event-driven core with separate modules for backtesting, execution, risk, strategy, journal, market-data, and portfolio.",
+          "Integrated real brokers (Deriv, Alpaca) with a demo/paper fallback for safe strategy testing.",
+          "Built a JWT-secured REST API plus an authenticated WebSocket stream for live updates.",
+          "Used Redis as an event bus/queue to decouple producers and consumers.",
+          "Added a pytest suite and Docker Compose + nginx deployment."
+        ],
+        link: null
+      },
+      "atm-biometric": {
+        title: "Biometric ATM System",
+        tagline: "A self-service banking kiosk built around fingerprint authentication and fraud detection.",
+        category: "Security & AI · Full-Stack",
+        role: "Personal project",
+        timeline: "Personal / independent",
+        client: "Independent build",
+        status: "Personal project",
+        stack: ["Django", "Django REST Framework", "Python", "React", "TypeScript", "Vite", "AES (cryptography)", "MySQL / SQLite"],
+        overview: [
+          "A biometric ATM kiosk that supports withdrawals, balance checks, mini-statements, OTP, and fraud detection. Authentication is fingerprint-first, with a layered domain/services/repositories architecture on the backend.",
+          "Security is central: biometric templates are encrypted, and a risk engine plus account-lockout logic guard against abuse."
+        ],
+        metrics: [
+          { n: "WebAuthn", l: "Fingerprint auth" },
+          { n: "AES", l: "Encrypted templates" },
+          { n: "Risk", l: "Fraud engine" },
+          { n: "OTP", l: "Multi-provider SMS" }
+        ],
+        highlights: [
+          "Implemented WebAuthn device-fingerprint authentication with a demo fallback path.",
+          "Built a layered biometrics domain (enrol, verify, matching) separated from services and repositories.",
+          "Encrypted biometric templates with AES via Python's cryptography library.",
+          "Added a risk/fraud engine and account-lockout logic to protect accounts.",
+          "Integrated multi-provider SMS OTP (Africa's Talking, Twilio, Econet) behind a factory/mock abstraction."
+        ],
+        link: null
+      },
+      "miss-universe": {
+        title: "Miss Universe Zimbabwe — Voting Platform",
+        tagline: "A three-app platform with a wallet economy and four payment gateways.",
+        category: "Platform · Payments",
+        role: "Personal project",
+        timeline: "Personal / independent",
+        client: "Independent build",
+        status: "Personal project",
+        stack: ["NestJS", "TypeScript", "Supabase / PostgreSQL", "Next.js", "Flutter", "Docker", "Caddy"],
+        overview: [
+          "A pageant voting and contestant platform made up of three applications — a NestJS API, a Next.js admin dashboard, and a Flutter mobile app — backed by Supabase/PostgreSQL.",
+          "Users buy votes through a wallet economy, with payments handled across multiple local and international gateways."
+        ],
+        metrics: [
+          { n: "3", l: "Apps in monorepo" },
+          { n: "4", l: "Payment gateways" },
+          { n: "Wallet", l: "Voting economy" },
+          { n: "PG", l: "Supabase / Postgres" }
+        ],
+        highlights: [
+          "Built a three-app monorepo: NestJS API, Next.js admin dashboard, and Flutter mobile client.",
+          "Designed a wallet/voting economy with vote purchases and balances.",
+          "Integrated four payment gateways — Stripe, Paynow, iVeri, and Apple/Google in-app purchases.",
+          "Delivered a rich module set: auth, votes, wallet, payments, contestants, feed, follows, live, and support.",
+          "Added email verification, role-based mobile entry, and a production go-live checklist."
+        ],
+        link: null
+      },
+      "sahwigate": {
+        title: "SahwiGate — Athletics Platform API",
+        tagline: "A professionally-engineered backend with queues, payments, docs, and a full test suite.",
+        category: "Backend · API",
+        role: "Personal project",
+        timeline: "Personal / independent",
+        client: "Independent build",
+        status: "Personal project",
+        stack: ["Fastify", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ", "Stripe", "Swagger", "Zod", "Vitest"],
+        overview: [
+          "SahwiGate is an athletics platform API built to production standards — clean modular boundaries, background job processing, payments, generated API docs, and both unit and integration tests.",
+          "It is the strongest showcase of my backend engineering discipline."
+        ],
+        metrics: [
+          { n: "BullMQ", l: "Job queues" },
+          { n: "Stripe", l: "Payments" },
+          { n: "Swagger", l: "API docs" },
+          { n: "Tested", l: "Unit + integration" }
+        ],
+        highlights: [
+          "Built background job processing with BullMQ on Redis.",
+          "Integrated Stripe payments with JWT auth, rate-limiting, and helmet hardening.",
+          "Generated interactive API documentation with Swagger and validated inputs with Zod.",
+          "Wrote unit and integration tests with Vitest, enforced with Husky and commitlint.",
+          "Organised the codebase into clean domains: activities, clubs, events, races, timing, wearables, media, and payments."
+        ],
+        link: null
+      },
+      "medguardqr": {
+        title: "MedGuardQR — Pharmacy Dispensing System",
+        tagline: "A QR-driven medication dispensing and inventory system with built-in safety rules.",
+        category: "Healthcare · Full-Stack",
+        role: "Personal project",
+        timeline: "Personal / independent",
+        client: "Independent build",
+        status: "Personal project",
+        stack: ["Django", "Django REST Framework", "MySQL", "React", "Vite", "qrcode", "Pillow"],
+        overview: [
+          "MedGuardQR manages medication dispensing and inventory for a pharmacy, using QR codes to identify and track medications through a pharmacist workflow.",
+          "It enforces real safety and stock rules rather than being a plain CRUD app."
+        ],
+        metrics: [
+          { n: "QR", l: "Medication codes" },
+          { n: "Alerts", l: "Stock / expiry" },
+          { n: "RBAC", l: "Role-based" },
+          { n: "3", l: "Django apps" }
+        ],
+        highlights: [
+          "Generated QR codes for medications with qrcode + Pillow.",
+          "Implemented low-stock and expiry-warning thresholds.",
+          "Enforced minimum-hours-between-dispense safety rules.",
+          "Added role-based access for admins and pharmacists.",
+          "Organised the backend into pharmacy, dispensing, and students Django apps with a React front-end."
+        ],
+        link: null
+      },
+      "conference-app": {
+        title: "Conference Companion App",
+        tagline: "A polished Flutter event app featuring a fully offline Bible with search and text-to-speech.",
+        category: "Mobile · Flutter",
+        role: "Personal project",
+        timeline: "Personal / independent",
+        client: "Independent build",
+        status: "Personal project",
+        stack: ["Flutter", "Dart", "Supabase", "Local Notifications", "flutter_tts", "timezone"],
+        overview: [
+          "A mobile companion app for a multi-day conference, covering the programme, departments, songs, testimonies, and an appraisals leaderboard — with a standout fully-offline Bible.",
+          "It ships with a web-admin and a colleague-mobile counterpart."
+        ],
+        metrics: [
+          { n: "Offline", l: "Bible (KJV+Shona)" },
+          { n: "TTS", l: "Text-to-speech" },
+          { n: "Reminders", l: "Programme alerts" },
+          { n: "Search", l: "Full-text verses" }
+        ],
+        highlights: [
+          "Built a multi-day programme with calendar reminders via local notifications.",
+          "Bundled a fully offline Bible (KJV + Shona, ~6.7 MB JSON) with verse highlighting.",
+          "Added text-to-speech playback and progressive full-text verse search.",
+          "Included departments, songs/lyrics, testimonies, and an appraisals leaderboard.",
+          "Paired the app with a web-admin and a colleague-mobile companion."
+        ],
+        link: null
+      }
+    };
+
+    (function () {
+      function qs(name) {
+        return new URLSearchParams(window.location.search).get(name);
+      }
+      function el(id) { return document.getElementById(id); }
+
+      var slug = qs("p");
+      var p = slug && PROJECTS[slug];
+
+      if (!p) {
+        el("cs-title").textContent = "Project not found";
+        el("cs-breadcrumb").textContent = "Not found";
+        el("cs-tagline").textContent = "Sorry, that project could not be found.";
+        el("cs-overview").innerHTML = '<p><a href="index.html#portfolio">Return to the portfolio</a> to pick a project.</p>';
+        el("cs-metrics-wrap").style.display = "none";
+        return;
+      }
+
+      document.title = p.title + " — Adonis T Mushonga";
+      el("cs-title").textContent = p.title;
+      el("cs-breadcrumb").textContent = p.title;
+      el("cs-image").src = "assets/img/portfolio/" + slug + ".svg";
+      el("cs-image").alt = p.title;
+      el("cs-tagline").textContent = p.tagline;
+
+      el("cs-overview").innerHTML = p.overview.map(function (t) { return "<p>" + t + "</p>"; }).join("");
+
+      if (p.metrics && p.metrics.length) {
+        el("cs-metrics").innerHTML = p.metrics.map(function (m) {
+          return '<div class="cs-metric"><span class="n">' + m.n + '</span><span class="l">' + m.l + '</span></div>';
+        }).join("");
+      } else {
+        el("cs-metrics-wrap").style.display = "none";
+      }
+
+      el("cs-highlights").innerHTML = p.highlights.map(function (h) {
+        return '<li><i class="bi bi-check-circle-fill"></i>' + h + "</li>";
+      }).join("");
+
+      el("cs-category").textContent = p.category;
+      el("cs-role").textContent = p.role;
+      el("cs-timeline").textContent = p.timeline;
+      el("cs-client").textContent = p.client;
+      el("cs-status").textContent = p.status;
+      el("cs-stack").innerHTML = p.stack.map(function (s) { return "<span>" + s + "</span>"; }).join("");
+
+      if (p.link) {
+        el("cs-link").innerHTML = '<a href="' + p.link + '" target="_blank" rel="noopener">Visit project</a>';
+      } else {
+        el("cs-link").innerHTML = '<span class="text-muted">Private / proprietary — <a href="index.html#contact">available on request</a></span>';
+      }
+    })();
+  </script>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->

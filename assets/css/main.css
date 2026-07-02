@@ -1448,6 +1448,300 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Custom Enhancements (buttons, stats, tech stack, contact form)
+--------------------------------------------------------------*/
+/* Hero tagline + CTA buttons */
+.hero .hero-tagline {
+  font-size: 18px;
+  max-width: 640px;
+  margin: 18px auto 0;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+
+.hero .hero-cta {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary-custom,
+.btn-outline-custom {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 26px;
+  border-radius: 50px;
+  font-family: var(--nav-font);
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid var(--accent-color);
+}
+
+.btn-primary-custom {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.btn-primary-custom:hover {
+  background: color-mix(in srgb, var(--accent-color), #000 12%);
+  border-color: color-mix(in srgb, var(--accent-color), #000 12%);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+  background: transparent;
+  color: var(--accent-color);
+}
+
+.btn-outline-custom:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+
+/* About stats */
+.about .about-stats .stat-box {
+  text-align: center;
+  padding: 18px 10px;
+  background: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  height: 100%;
+}
+
+.about .about-stats .stat-num {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1.1;
+}
+
+.about .about-stats .stat-label {
+  display: block;
+  font-size: 13px;
+  margin-top: 4px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+/* Tech stack */
+.tech-stack .tech-group {
+  background: var(--surface-color);
+  border-radius: 14px;
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.tech-stack .tech-group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack .tech-group h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-stack .tech-group h3 i {
+  color: var(--accent-color);
+}
+
+.tech-stack .tech-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-stack .tech-tags li {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: color-mix(in srgb, var(--accent-color), #000 20%);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 50px;
+}
+
+/* Portfolio tags + link buttons */
+.portfolio .portfolio-item .portfolio-info .portfolio-tags {
+  display: block;
+  font-size: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-top: 6px;
+  padding: 0 20px;
+}
+
+.portfolio .portfolio-item .portfolio-info .portfolio-badge {
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0 20px 4px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+/* Case-study detail page */
+.portfolio-details .cs-hero {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-details .cs-hero img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-details .cs-section {
+  margin-bottom: 28px;
+}
+
+.portfolio-details .cs-section h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.portfolio-details .cs-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-details .cs-highlights li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.portfolio-details .cs-highlights li i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+.portfolio-details .cs-info {
+  background: var(--surface-color);
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
+  position: sticky;
+  top: 30px;
+}
+
+.portfolio-details .cs-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.portfolio-details .cs-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-details .cs-info ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  font-size: 14px;
+}
+
+.portfolio-details .cs-info ul li:last-child {
+  border-bottom: 0;
+}
+
+.portfolio-details .cs-info ul li strong {
+  display: block;
+  color: var(--heading-color);
+  margin-bottom: 3px;
+}
+
+.portfolio-details .cs-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.portfolio-details .cs-stack span {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: color-mix(in srgb, var(--accent-color), #000 20%);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 50px;
+}
+
+.portfolio-details .cs-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 6px 0 10px;
+}
+
+.portfolio-details .cs-metric {
+  flex: 1 1 120px;
+  text-align: center;
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 16px 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+.portfolio-details .cs-metric .n {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.portfolio-details .cs-metric .l {
+  display: block;
+  font-size: 12px;
+  margin-top: 2px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* Contact form */
+.contact .contact-form .form-control {
+  border-radius: 10px;
+  padding: 13px 16px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: none;
+}
+
+.contact .contact-form .form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 85%);
+}
+
 .starter-section {
   /* Add your styles here */
 }
