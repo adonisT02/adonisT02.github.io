@@ -1,24 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b8f3a"/>
-      <stop offset="1" stop-color="#053f1c"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17150f"/>
+      <stop offset="1" stop-color="#0d0c0a"/>
     </linearGradient>
+    <radialGradient id="glow" cx="18%" cy="12%" r="60%">
+      <stop offset="0" stop-color="#c9f24e" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#c9f24e" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="800" height="500" fill="url(#g)"/>
-  <circle cx="690" cy="110" r="200" fill="#ffffff" opacity="0.06"/>
-  <circle cx="120" cy="440" r="150" fill="#ffffff" opacity="0.05"/>
-  <g opacity="0.10" fill="none" stroke="#ffffff" stroke-width="2">
-    <circle cx="700" cy="410" r="60"/>
-    <circle cx="640" cy="70" r="40"/>
-  </g>
-  <text x="56" y="90" fill="#ffffff" font-size="17" font-weight="700" letter-spacing="3" opacity="0.9">ENTERPRISE · ERP</text>
-  <line x1="56" y1="108" x2="150" y2="108" stroke="#ffffff" stroke-width="3" opacity="0.6"/>
-  <text x="54" y="248" fill="#ffffff" font-size="60" font-weight="800">LADS</text>
-  <text x="56" y="300" fill="#ffffff" font-size="30" font-weight="600" opacity="0.95">Local Authority ERP</text>
-  <text x="56" y="392" fill="#ffffff" font-size="20" font-weight="500" opacity="0.85">Laravel · Livewire · ZIMRA Fiscalization</text>
-  <g>
-    <circle cx="712" cy="452" r="30" fill="#ffffff" opacity="0.16"/>
-    <text x="712" y="460" fill="#ffffff" font-size="22" font-weight="800" text-anchor="middle">LA</text>
-  </g>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#glow)"/>
+  <rect x="24" y="24" width="752" height="452" rx="14" fill="none" stroke="#ece7dd" stroke-opacity="0.10"/>
+  <text x="880" y="470" font-family="Georgia, 'Times New Roman', serif" font-size="380" font-weight="500"
+        fill="#c9f24e" fill-opacity="0.05" text-anchor="end" font-style="italic">LA</text>
+  <text x="56" y="92" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="15"
+        letter-spacing="4" fill="#c9f24e">ENTERPRISE / ERP</text>
+  <line x1="56" y1="110" x2="140" y2="110" stroke="#c9f24e" stroke-width="2" stroke-opacity="0.6"/>
+  <text x="54" y="252" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="500" fill="#ece7dd">LADS</text>
+  <text x="56" y="304" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-style="italic" fill="#ece7dd" fill-opacity="0.72">Local Authority ERP</text>
+  <text x="56" y="392" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="18" fill="#9c968a">Laravel · Livewire · ZIMRA Fiscalization</text>
+  <text x="744" y="440" font-family="'JetBrains Mono', ui-monospace, Consolas, monospace" font-size="13"
+        letter-spacing="2" fill="#6f6a60" text-anchor="end">A. MUSHONGA</text>
 </svg>

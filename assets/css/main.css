@@ -1745,3 +1745,211 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*==============================================================
+# DARK "DEVELOPER" THEME — full visual redesign (overrides above)
+==============================================================*/
+:root {
+  --background-color: #0a0f0d;
+  --default-color: #c3ccc8;
+  --heading-color: #f3f7f5;
+  --accent-color: #34d399;          /* bright emerald — pops on dark */
+  --surface-color: #10161400;       /* set real value just below */
+  --surface-color: #101614;
+  --contrast-color: #04140d;        /* near-black text on accent */
+
+  --nav-color: #c3ccc8;
+  --nav-hover-color: #34d399;
+  --nav-mobile-background-color: #0a0f0d;
+  --nav-dropdown-background-color: #101614;
+  --nav-dropdown-color: #c3ccc8;
+  --nav-dropdown-hover-color: #34d399;
+
+  --mono: ui-monospace, "Cascadia Code", "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+/* keep the "light" preset dark too (hero, footer use it) */
+.light-background {
+  --background-color: #0c1311;
+  --surface-color: #121a17;
+}
+.dark-background {
+  --background-color: #060a09;
+  --surface-color: #101614;
+}
+
+/* Page canvas: dark with a subtle dotted grid + corner glow */
+body {
+  background-color: var(--background-color);
+  background-image:
+    radial-gradient(circle at 15% 0%, color-mix(in srgb, var(--accent-color), transparent 92%), transparent 42%),
+    radial-gradient(circle at 100% 100%, color-mix(in srgb, var(--accent-color), transparent 94%), transparent 40%),
+    radial-gradient(color-mix(in srgb, #ffffff, transparent 96%) 1px, transparent 1px);
+  background-size: auto, auto, 22px 22px;
+  background-attachment: fixed;
+}
+
+::selection { background: color-mix(in srgb, var(--accent-color), transparent 60%); color: #fff; }
+::-webkit-scrollbar { width: 11px; }
+::-webkit-scrollbar-track { background: #0a0f0d; }
+::-webkit-scrollbar-thumb { background: #223029; border-radius: 10px; border: 2px solid #0a0f0d; }
+::-webkit-scrollbar-thumb:hover { background: color-mix(in srgb, var(--accent-color), #000 30%); }
+
+/* Sidebar nav pills */
+.navmenu a, .navmenu a:focus {
+  background: color-mix(in srgb, #ffffff, transparent 94%);
+  border: 1px solid color-mix(in srgb, #ffffff, transparent 92%);
+  color: var(--nav-color);
+}
+.navmenu a:hover, .navmenu .active, .navmenu .active:focus, .navmenu li:hover>a {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--accent-color), transparent 65%);
+}
+
+/* Hero: dim the photo, add emerald glow, mono tagline */
+.hero img { opacity: 0.1; filter: grayscale(0.4); }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(60% 50% at 25% 25%, color-mix(in srgb, var(--accent-color), transparent 86%), transparent 70%),
+    var(--background-color);
+  opacity: 1;
+  z-index: 2;
+}
+.hero h2 { letter-spacing: -1px; }
+.hero p span { border-bottom-color: var(--accent-color); }
+.hero .hero-tagline {
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+.hero .hero-tagline strong { color: var(--accent-color); }
+
+/* Section titles: emerald underline accent */
+.section-title h2 { color: var(--heading-color); }
+.section-title h2::after { background: var(--accent-color); }
+.section-title p { color: color-mix(in srgb, var(--default-color), transparent 20%); }
+
+/* Generic surface cards get a hairline border + hover lift/glow */
+.about .about-stats .stat-box,
+.tech-stack .tech-group,
+.services .service-item,
+.portfolio-details .cs-info,
+.portfolio-details .cs-metric,
+.resume .resume-item {
+  border: 1px solid color-mix(in srgb, #ffffff, transparent 92%);
+}
+.tech-stack .tech-group:hover,
+.services .service-item:hover {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+  box-shadow: 0 12px 34px rgba(0,0,0,0.5);
+}
+
+/* Monospace accents */
+.portfolio-tags, .portfolio-badge,
+.tech-stack .tech-tags li,
+.portfolio-details .cs-stack span { font-family: var(--mono); }
+
+/* Tech/skill chips + case-study stack chips on dark */
+.tech-stack .tech-tags li,
+.portfolio-details .cs-stack span {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 78%);
+}
+
+/* --- Portfolio cards: always-visible dark cards (no hover-hide) --- */
+.portfolio .portfolio-item {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, #ffffff, transparent 92%);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.portfolio .portfolio-item:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+  box-shadow: 0 16px 44px rgba(0,0,0,0.55);
+}
+.portfolio .portfolio-item img {
+  position: static;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid color-mix(in srgb, #ffffff, transparent 93%);
+}
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 1;
+  position: static;
+  inset: auto;
+  background: transparent;
+  padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio .portfolio-item .portfolio-info .portfolio-badge {
+  margin: 0 0 10px;
+  box-shadow: 0 0 16px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+.portfolio .portfolio-item .portfolio-info h4 {
+  color: var(--heading-color);
+  padding-right: 0;
+  margin-bottom: 6px;
+}
+.portfolio .portfolio-item .portfolio-info p { padding-right: 0; }
+.portfolio .portfolio-item .portfolio-info .portfolio-tags {
+  padding: 0;
+  margin: 10px 0 0;
+  color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  font-size: 12.5px;
+}
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  position: static;
+  top: auto;
+  right: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin: 16px 10px 0 0;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 78%);
+}
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+}
+
+/* Buttons: add glow */
+.btn-primary-custom { box-shadow: 0 0 22px color-mix(in srgb, var(--accent-color), transparent 68%); }
+
+/* Resume timeline + headings */
+.resume .resume-item { border-radius: 12px; padding-left: 22px; }
+.resume .resume-title { color: var(--accent-color); }
+
+/* Case-study / detail page */
+.page-title { background: var(--surface-color); }
+.page-title h1, .portfolio-details .portfolio-description h3, .portfolio-details .cs-info h3 { color: var(--heading-color); }
+.portfolio-details .portfolio-description .lead { color: color-mix(in srgb, var(--default-color), transparent 5%); }
+.portfolio-details .cs-section h3 { border-bottom-color: color-mix(in srgb, var(--accent-color), transparent 70%); }
+
+/* Contact form fields on dark */
+.contact .contact-form .form-control {
+  background: color-mix(in srgb, var(--surface-color), #ffffff 3%);
+  color: var(--default-color);
+  border: 1px solid color-mix(in srgb, #ffffff, transparent 88%);
+}
+.contact .contact-form .form-control::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+}
+
+/* Footer polish */
+.footer { border-top: 1px solid color-mix(in srgb, #ffffff, transparent 92%); }
+.footer .sitename { color: var(--heading-color); }
