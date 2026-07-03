@@ -19,49 +19,44 @@
     body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     a{ color:inherit; text-decoration:none; }
 
-    .page{ width:210mm; min-height:297mm; margin:0 auto; padding:15mm 15mm 12mm; background:var(--paper); }
+    .page{ width:210mm; height:297mm; margin:0 auto; padding:12mm 14mm 9mm; background:var(--paper); overflow:hidden; }
 
-    /* Header */
-    .head{ border-bottom:2px solid var(--ink); padding-bottom:9mm; margin-bottom:8mm; }
+    .head{ border-bottom:2px solid var(--ink); padding-bottom:5mm; margin-bottom:5mm; }
     .name{ font-family:var(--serif); font-weight:500; font-size:40pt; line-height:0.95; letter-spacing:-0.02em; }
     .name b{ color:var(--accent); }
-    .role{ font-family:var(--mono); font-size:9.5pt; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-top:3mm; }
-    .contact{ font-family:var(--mono); font-size:8pt; color:var(--muted); margin-top:4mm; display:flex; flex-wrap:wrap; gap:2mm 5mm; }
+    .role{ font-family:var(--mono); font-size:10.5pt; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-top:2.5mm; }
+    .contact{ font-family:var(--mono); font-size:8.6pt; color:var(--muted); margin-top:3mm; display:flex; flex-wrap:wrap; gap:1.5mm 5mm; }
     .contact span::before{ content:"›"; color:var(--accent); margin-right:2mm; }
 
-    /* Layout */
-    .grid{ display:grid; grid-template-columns:1.85fr 1fr; gap:10mm; }
-    section{ margin-bottom:6.5mm; }
-    .h{ font-family:var(--mono); font-size:8pt; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); margin-bottom:3.5mm; padding-bottom:1.5mm; border-bottom:1px solid var(--line); }
+    .grid{ display:grid; grid-template-columns:1.85fr 1fr; gap:9mm; }
+    section{ margin-bottom:4.5mm; }
+    .h{ font-family:var(--mono); font-size:9pt; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); margin-bottom:2.5mm; padding-bottom:1.2mm; border-bottom:1px solid var(--line); }
 
-    .summary{ font-size:10pt; line-height:1.55; color:#333029; }
+    .summary{ font-size:10.7pt; line-height:1.5; color:#333029; }
 
-    .job{ margin-bottom:5mm; }
+    .job{ margin-bottom:3.5mm; }
     .job__top{ display:flex; justify-content:space-between; align-items:baseline; gap:4mm; }
-    .job__role{ font-family:var(--serif); font-size:13pt; font-weight:500; }
-    .job__when{ font-family:var(--mono); font-size:8pt; color:var(--muted); white-space:nowrap; }
-    .job__co{ font-family:var(--mono); font-size:8.5pt; color:var(--accent); margin:0.5mm 0 2mm; }
+    .job__role{ font-family:var(--serif); font-size:14pt; font-weight:500; }
+    .job__when{ font-family:var(--mono); font-size:8.6pt; color:var(--muted); white-space:nowrap; }
+    .job__co{ font-family:var(--mono); font-size:9.2pt; color:var(--accent); margin:0.5mm 0 2mm; }
     .job ul{ list-style:none; }
-    .job li{ position:relative; padding-left:5mm; font-size:9.5pt; line-height:1.45; color:#3a372f; margin-bottom:1.6mm; }
+    .job li{ position:relative; padding-left:5mm; font-size:10.4pt; line-height:1.42; color:#3a372f; margin-bottom:1.4mm; }
     .job li::before{ content:"—"; position:absolute; left:0; color:var(--accent); }
 
-    .proj{ margin-bottom:3.2mm; }
-    .proj__name{ font-family:var(--serif); font-size:10.5pt; font-weight:500; }
-    .proj__name em{ font-style:normal; color:var(--accent); font-family:var(--mono); font-size:7.5pt; }
-    .proj__desc{ font-size:9pt; color:var(--muted); line-height:1.4; margin-top:0.3mm; }
+    .proj{ margin-bottom:2.6mm; }
+    .proj__name{ font-family:var(--serif); font-size:11.4pt; font-weight:500; }
+    .proj__name em{ font-style:normal; color:var(--accent); font-family:var(--mono); font-size:8pt; }
+    .proj__desc{ font-size:9.7pt; color:var(--muted); line-height:1.38; margin-top:0.3mm; }
 
-    /* Sidebar */
     .aside .h{ margin-top:0; }
-    .skill-group{ margin-bottom:4mm; }
-    .skill-group h4{ font-size:8.5pt; font-weight:600; margin-bottom:1.5mm; }
+    .skill-group{ margin-bottom:3mm; }
+    .skill-group h4{ font-size:9.4pt; font-weight:600; margin-bottom:1.5mm; }
     .tags{ display:flex; flex-wrap:wrap; gap:1.5mm; }
-    .tags span{ font-family:var(--mono); font-size:7.5pt; color:#40506a; background:var(--accent-soft); color:#3f5a12; padding:0.8mm 2mm; border-radius:2mm; }
-    .edu__deg{ font-family:var(--serif); font-size:11pt; font-weight:500; }
-    .edu__meta{ font-family:var(--mono); font-size:8pt; color:var(--muted); margin-top:1mm; }
-    .kv{ font-size:9pt; color:#3a372f; line-height:1.5; }
+    .tags span{ font-family:var(--mono); font-size:8.1pt; background:var(--accent-soft); color:#3f5a12; padding:0.8mm 2mm; border-radius:2mm; }
+    .edu__deg{ font-family:var(--serif); font-size:11.6pt; font-weight:500; }
+    .edu__meta{ font-family:var(--mono); font-size:8.6pt; color:var(--muted); margin-top:1mm; }
+    .kv{ font-size:9.8pt; color:#3a372f; line-height:1.5; }
     .kv b{ color:var(--ink); }
-
-    .foot{ margin-top:4mm; padding-top:3mm; border-top:1px solid var(--line); font-family:var(--mono); font-size:7.5pt; color:var(--faint); display:flex; justify-content:space-between; }
   </style>
 </head>
 <body>
@@ -86,8 +81,8 @@
           <p class="summary">
             Full-Stack Software Engineer with 4+ years designing, building, and deploying scalable web, mobile,
             and AI systems for government and enterprise clients. I own features end to end — from database and
-            API design through to UI and deployment. My work powers digital platforms used by
-            <strong>60+ local authorities</strong> across Zimbabwe.
+            API design to UI and deployment. My work powers platforms used by <strong>60+ local authorities</strong>
+            across Zimbabwe.
           </p>
         </section>
 
@@ -103,8 +98,7 @@
               <li>Built and maintained local-authority platforms now used by <b>60+ councils</b>, spanning procurement, licensing, CRM, and financials.</li>
               <li>Worked in a 15+ engineer team designing scalable ERP features, owning modules from database schema to UI.</li>
               <li>Developed Laravel &amp; Django backends integrated with React front-ends over well-structured REST APIs.</li>
-              <li>Integrated ZIMRA fiscalization and built asynchronous, queue-based report generation with multi-format export.</li>
-              <li>Led feature deployments and drove debugging, performance optimization, and technical documentation.</li>
+              <li>Integrated ZIMRA fiscalization and built asynchronous, queue-based report generation; led deployments and optimization.</li>
             </ul>
           </div>
         </section>
@@ -116,7 +110,6 @@
           <div class="proj"><div class="proj__name">MinutePark — Parking Enforcement <em>Flutter · Laravel</em></div><div class="proj__desc">Offline-first mobile system with ObjectBox, background two-way sync, and Bluetooth thermal printing.</div></div>
           <div class="proj"><div class="proj__name">Trade — Algorithmic Trading Bot <em>FastAPI · React</em></div><div class="proj__desc">Event-driven platform with Deriv/Alpaca integrations, backtesting, risk engine, and WebSocket streaming.</div></div>
           <div class="proj"><div class="proj__name">Biometric ATM System <em>Django · React</em></div><div class="proj__desc">Self-service banking kiosk with WebAuthn fingerprint auth, AES-encrypted templates, and a fraud engine.</div></div>
-          <div class="proj"><div class="proj__name">SahwiGate — Athletics API <em>Fastify · Prisma</em></div><div class="proj__desc">Production-grade backend with BullMQ queues, Stripe payments, Swagger docs, and a full test suite.</div></div>
         </section>
       </main>
 
@@ -137,24 +130,14 @@
 
         <section>
           <div class="h">Highlights</div>
-          <p class="kv">
-            <b>60+</b> councils served nationwide<br>
-            <b>4+</b> years shipping production software<br>
-            <b>10</b> full-stack, mobile &amp; AI builds<br>
-            <b>15+</b> engineer team collaboration
-          </p>
+          <p class="kv"><b>60+</b> councils served<br><b>4+</b> years shipping production software<br><b>10</b> full-stack, mobile &amp; AI builds<br><b>15+</b> engineer team</p>
         </section>
 
         <section>
           <div class="h">Languages</div>
-          <p class="kv">English — Fluent<br>Shona — Native</p>
+          <p class="kv">English — Fluent · Shona — Native</p>
         </section>
       </aside>
-    </div>
-
-    <div class="foot">
-      <span>Adonis T Mushonga — Full-Stack Software Engineer</span>
-      <span>adonisT02.github.io</span>
     </div>
   </div>
 </body>
