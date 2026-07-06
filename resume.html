@@ -19,7 +19,7 @@
     body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     a{ color:inherit; text-decoration:none; }
 
-    .page{ width:210mm; height:297mm; margin:0 auto; padding:12mm 14mm 9mm; background:var(--paper); overflow:hidden; }
+    .page{ width:210mm; min-height:297mm; margin:0 auto; padding:12mm 14mm 9mm; background:var(--paper); }
 
     .head{ border-bottom:2px solid var(--ink); padding-bottom:5mm; margin-bottom:5mm; }
     .name{ font-family:var(--serif); font-weight:500; font-size:40pt; line-height:0.95; letter-spacing:-0.02em; }
@@ -111,6 +111,7 @@
           <div class="proj"><div class="proj__name">MinutePark — Parking Enforcement <em>Flutter · Laravel</em></div><div class="proj__desc">Offline-first sync (ObjectBox) and Bluetooth printing let officers keep issuing tickets with zero connectivity — sustaining revenue capture in the field.</div></div>
           <div class="proj"><div class="proj__name">Trade — Algorithmic Trading Bot <em>FastAPI · React</em></div><div class="proj__desc">Event-driven engine with backtesting and a risk layer, executing Deriv/Alpaca strategies over live WebSocket streams to enforce disciplined, rule-based trades.</div></div>
           <div class="proj"><div class="proj__name">Biometric ATM System <em>Django · React</em></div><div class="proj__desc">WebAuthn fingerprint auth with AES-encrypted templates and a fraud engine — cutting card-based fraud exposure in self-service banking.</div></div>
+          <div class="proj"><div class="proj__name">SahwiGate — Athletics API <em>Fastify · Prisma</em></div><div class="proj__desc">Production-grade athletics backend — BullMQ job queues and Stripe payments behind a Swagger-documented, fully-tested API, letting organisers run paid event registration end to end.</div></div>
         </section>
       </main>
 
