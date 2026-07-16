@@ -57,6 +57,7 @@
     .edu__meta{ font-family:var(--mono); font-size:8.6pt; color:var(--muted); margin-top:1mm; }
     .kv{ font-size:9.8pt; color:#3a372f; line-height:1.5; }
     .kv b{ color:var(--ink); }
+    .edu__course{ margin-top:1.5mm; }
   </style>
 </head>
 <body>
@@ -69,7 +70,7 @@
         <span>+263 775 450 425</span>
         <span>adonistmushonga@gmail.com</span>
         <span>github.com/adonisT02</span>
-        <span>linkedin.com/in/sirado-dev</span>
+        <span>linkedin.com/in/adonisT02</span>
         <span>adonisT02.github.io</span>
       </div>
     </header>
@@ -79,11 +80,11 @@
         <section>
           <div class="h">Profile</div>
           <p class="summary">
-            Full-Stack Software Engineer with 4+ years turning business problems into scalable web, mobile, and AI
-            systems for government and enterprise clients. I own outcomes end to end — scoping the problem, then
-            architecting the database, API, UI, and deployment that solve it. My platforms digitised revenue
-            collection for <strong>60+ local authorities</strong> across Zimbabwe, replacing manual, paper-based
-            processes at national scale.
+            High-performing Full-Stack Software Engineer with 4+ years of hands-on experience architecting scalable
+            web, mobile, and AI systems for enterprise and public-sector environments. Proven expertise in
+            multi-tenant database design, secure API development, and high-throughput asynchronous queue management.
+            Deploys rigorous software engineering methodologies and systematic performance optimization to modernize
+            national-scale financial infrastructure and eliminate operational bottlenecks.
           </p>
         </section>
 
@@ -96,48 +97,54 @@
             </div>
             <div class="job__co">LADS Africa · Harare, Zimbabwe</div>
             <ul>
-              <li>Architected a multi-tenant local-authority platform now live at <b>60+ councils</b>, unifying procurement, licensing, CRM and billing — replacing paper-based revenue collection and cutting ~10 hrs/week of manual reconciliation per council.</li>
-              <li>Re-architected batch reporting onto an asynchronous, queue-based pipeline (Laravel queues + Redis), cutting report generation from ~15 min to under 30 s and eliminating peak-billing timeouts that stalled council operations.</li>
-              <li>Integrated ZIMRA fiscalization end to end, bringing 60+ councils into statutory tax compliance and unblocking legally-required e-invoicing across the platform — $25 M+ in revenue processed to date.</li>
-              <li>Owned modules end to end within a 15-engineer team — schema to UI — standardising REST contracts between Laravel/Django and React to raise feature-delivery velocity and shrink integration rework.</li>
+              <li>Architected and deployed a multi-tenant local-authority ERP platform currently live at <b>60+ councils</b> nationwide, digitizing manual paper-based revenue collection systems and saving approximately 10 hours per week in manual reconciliation per council.</li>
+              <li>Re-engineered heavy batch reporting workflows into an asynchronous, queue-based pipeline utilizing Laravel Queues and Redis, cutting report generation times from ~15 minutes to under 30 seconds and successfully mitigating peak-billing application timeouts.</li>
+              <li>Integrated ZIMRA fiscalization frameworks end-to-end to ensure strict statutory compliance for 60+ local authorities, securely processing over $25M+ in national revenue and unblocking legally-required e-invoicing pipelines.</li>
+              <li>Collaborated within a 15-engineer technical team to own full-stack feature delivery end-to-end, standardizing robust REST contracts between Laravel/Django backends and React interfaces to accelerate velocity and decrease integration rework.</li>
             </ul>
           </div>
         </section>
 
         <section>
           <div class="h">Selected Projects</div>
-          <div class="proj"><div class="proj__name">LADS Local Authority ERP <em>Laravel · Livewire</em></div><div class="proj__desc">45+ modules powering revenue collection for 60+ councils — ZIMRA fiscalization and async reporting replacing manual billing at national scale.</div></div>
-          <div class="proj"><div class="proj__name">MineraERP — Mining ERP (MMCZ) <em>Laravel 13</em></div><div class="proj__desc">IAS 16 asset-revaluation engine and ZIMRA/ASYCUDA integration that automated statutory customs-export accounting, removing error-prone manual filings.</div></div>
-          <div class="proj"><div class="proj__name">MinutePark — Parking Enforcement <em>Flutter · Laravel</em></div><div class="proj__desc">Offline-first sync (ObjectBox) and Bluetooth printing let officers keep issuing tickets with zero connectivity — sustaining revenue capture in the field.</div></div>
-          <div class="proj"><div class="proj__name">Trade — Algorithmic Trading Bot <em>FastAPI · React</em></div><div class="proj__desc">Event-driven engine with backtesting and a risk layer, executing Deriv/Alpaca strategies over live WebSocket streams to enforce disciplined, rule-based trades.</div></div>
-          <div class="proj"><div class="proj__name">Biometric ATM System <em>Django · React</em></div><div class="proj__desc">WebAuthn fingerprint auth with AES-encrypted templates and a fraud engine — cutting card-based fraud exposure in self-service banking.</div></div>
-          <div class="proj"><div class="proj__name">SahwiGate — Athletics API <em>Fastify · Prisma</em></div><div class="proj__desc">Production-grade athletics backend — BullMQ job queues and Stripe payments behind a Swagger-documented, fully-tested API, letting organisers run paid event registration end to end.</div></div>
+          <div class="proj"><div class="proj__name">LADS Local Authority ERP <em>Laravel · Livewire</em></div><div class="proj__desc">Powered national-scale revenue collection for 60+ councils featuring ZIMRA fiscalization and Redis-driven asynchronous report rendering.</div></div>
+          <div class="proj"><div class="proj__name">MineraERP — Mining ERP (MMCZ) <em>Laravel 13</em></div><div class="proj__desc">Developed an IAS 16 asset-revaluation engine with integrated ZIMRA/ASYCUDA systems to automate complex statutory customs-export accounting and eliminate manual filing errors.</div></div>
+          <div class="proj"><div class="proj__name">MinutePark — Parking Enforcement <em>Flutter · Laravel</em></div><div class="proj__desc">Built an offline-first mobile application using Flutter and ObjectBox with integrated Bluetooth printing capabilities to ensure continuous revenue capture regardless of field connectivity.</div></div>
+          <div class="proj"><div class="proj__name">Algorithmic Trading Bot <em>FastAPI · React</em></div><div class="proj__desc">Engineered an event-driven quantitative trading backend with FastAPI, React, and WebSockets, incorporating automated historical backtesting and automated risk-management layers across Deriv/Alpaca live streams.</div></div>
+          <div class="proj"><div class="proj__name">Biometric ATM System <em>Django · React</em></div><div class="proj__desc">Implemented a secure authentication layer using Django, React, and WebAuthn for fingerprint biometric registration with AES-encrypted template storage and a built-in financial fraud mitigation engine.</div></div>
+          <div class="proj"><div class="proj__name">SahwiGate — Athletics API <em>Fastify · Prisma</em></div><div class="proj__desc">Designed a high-throughput athletics backend utilizing Fastify, Prisma, and BullMQ job queues with integrated Stripe payment processing and automated Swagger documentation.</div></div>
         </section>
       </main>
 
       <aside class="aside">
         <section>
           <div class="h">Skills</div>
-          <div class="skill-group"><h4>Languages</h4><div class="tags"><span>PHP</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Dart</span><span>SQL</span></div></div>
-          <div class="skill-group"><h4>Frameworks</h4><div class="tags"><span>Laravel</span><span>Django</span><span>React</span><span>Next.js</span><span>Flutter</span><span>FastAPI</span><span>NestJS</span></div></div>
-          <div class="skill-group"><h4>Data &amp; AI</h4><div class="tags"><span>scikit-learn</span><span>Pandas</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span></div></div>
-          <div class="skill-group"><h4>Tools &amp; DevOps</h4><div class="tags"><span>Git</span><span>Docker</span><span>Linux</span><span>Azure</span><span>CI/CD</span><span>Figma</span></div></div>
+          <div class="skill-group"><h4>Backend &amp; API Engineering</h4><div class="tags"><span>PHP (Laravel, Livewire)</span><span>Python (Django, FastAPI)</span><span>Node.js (NestJS, Fastify)</span><span>RESTful API Architecture</span><span>Event-Driven Systems</span></div></div>
+          <div class="skill-group"><h4>Frontend &amp; Mobile Development</h4><div class="tags"><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Dart (Flutter)</span><span>UI/UX Design (Figma)</span></div></div>
+          <div class="skill-group"><h4>Databases &amp; Cloud DevOps</h4><div class="tags"><span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>Prisma</span><span>ObjectBox</span><span>Git</span><span>Docker</span><span>Linux</span><span>Azure</span><span>CI/CD Pipelines</span></div></div>
+          <div class="skill-group"><h4>System Design &amp; Methodologies</h4><div class="tags"><span>Multi-Tenant Architecture</span><span>Fiscalization/Statutory Compliance</span><span>Queue-Based Pipelines</span><span>Agile Team Collaboration</span></div></div>
         </section>
 
         <section>
           <div class="h">Education</div>
-          <div class="edu__deg">B.Tech (Hons) Software Engineering</div>
-          <div class="edu__meta">Harare Institute of Technology<br>2021 — 2025</div>
+          <div class="edu__deg">Bachelor of Technology Honors Degree in Software Engineering</div>
+          <div class="edu__meta">Harare Institute of Technology<br>2020 — 2025</div>
+          <p class="kv edu__course"><b>Key Coursework:</b> Enterprise Software Architecture, Database Systems Engineering, Distributed Systems, Advanced Web Engineering, Mobile Application Development, Artificial Intelligence &amp; Machine Learning.</p>
         </section>
 
         <section>
           <div class="h">Highlights</div>
-          <p class="kv"><b>60+</b> councils served<br><b>4+</b> years shipping production software<br><b>10</b> full-stack, mobile &amp; AI builds<br><b>15+</b> engineer team</p>
+          <p class="kv"><b>4+</b> years shipping production software<br><b>10+</b> full-stack/mobile/AI systems deployed<br>Extensive cross-functional team leadership (<b>15+</b> engineer environments)</p>
         </section>
 
         <section>
           <div class="h">Languages</div>
-          <p class="kv">English — Fluent · Shona — Native</p>
+          <p class="kv">English (Fluent) · Shona (Native)</p>
+        </section>
+
+        <section>
+          <div class="h">References</div>
+          <p class="kv">Available upon request</p>
         </section>
       </aside>
     </div>
