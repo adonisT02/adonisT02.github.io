@@ -85,6 +85,26 @@
     });
   }
 
+
+  /* Work filters */
+  var filterBtns = document.querySelectorAll(".filter");
+  var workRows = document.querySelectorAll(".work-row");
+  if (filterBtns.length) {
+    filterBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var cat = b.getAttribute("data-filter");
+        filterBtns.forEach(function (x) { x.classList.toggle("active", x === b); });
+        var n = 0;
+        workRows.forEach(function (r) {
+          var on = cat === "all" || r.getAttribute("data-cat") === cat;
+          r.classList.toggle("hidden", !on);
+          if (on) { n++; r.querySelector(".work-index").textContent = (n < 10 ? "0" : "") + n; r.classList.add("in"); }
+        });
+        var c = document.getElementById("workCount"); if (c) c.textContent = n + (n === 1 ? " project" : " projects");
+      });
+    });
+  }
+
   /* Magnetic buttons (subtle) */
   if (canHover && !reduce) {
     document.querySelectorAll(".btn").forEach(function (btn) {

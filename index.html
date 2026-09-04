@@ -11,17 +11,37 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Adonis T Mushonga — Full-Stack Software Engineer">
   <meta property="og:description" content="4+ years building scalable web, mobile, and AI systems used by 60+ local authorities. Laravel · Django · React · Flutter · Python.">
-  <meta property="og:image" content="assets/img/profile-img.jpg">
+  <meta property="og:image" content="https://adonisT02.github.io/assets/img/og.jpg">
   <meta property="og:url" content="https://adonisT02.github.io">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://adonisT02.github.io/assets/img/og.jpg">
+  <meta name="theme-color" content="#0f0e0c">
 
   <link href="assets/img/favicon.png" rel="icon">
+  <link rel="canonical" href="https://adonisT02.github.io/">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/site.css?v=4">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adonis T Mushonga",
+    "jobTitle": "Full-Stack Software Engineer",
+    "url": "https://adonisT02.github.io",
+    "email": "mailto:adonistmushonga@gmail.com",
+    "telephone": "+263775450425",
+    "address": { "@type": "PostalAddress", "addressLocality": "Harare", "addressCountry": "ZW" },
+    "sameAs": ["https://github.com/adonisT02", "https://linkedin.com/in/adonisT02"],
+    "worksFor": { "@type": "Organization", "name": "LADS Africa" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Harare Institute of Technology" },
+    "knowsAbout": ["Laravel", "Django", "React", "Next.js", "Flutter", "Python", "FastAPI", "NestJS", "PostgreSQL", "MySQL", "Redis", "Docker"]
+  }
+  </script>
 </head>
 <body>
 
@@ -54,7 +74,7 @@
           <p class="hero__lede" data-reveal data-reveal-delay="1">
             I'm <strong>Adonis T Mushonga</strong> — a full-stack engineer building production web, mobile,
             and AI systems. My work powers digital platforms used by <strong>60+ local authorities</strong>
-            across Zimbabwe.
+            across Zimbabwe, and ERPs for national institutions.
           </p>
           <div class="hero__actions" data-reveal data-reveal-delay="2">
             <div class="btn-row">
@@ -78,10 +98,87 @@
     <!-- MARQUEE -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
-        <span>Laravel</span><span>Django</span><span>React</span><span>Next.js</span><span>Flutter</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
-        <span>Laravel</span><span>Django</span><span>React</span><span>Next.js</span><span>Flutter</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+        <span>Laravel</span><span>Django</span><span>React</span><span>Next.js</span><span>Flutter</span><span>Python</span><span>FastAPI</span><span>NestJS</span><span>PostgreSQL</span><span>TimescaleDB</span><span>Redis</span><span>Docker</span>
+        <span>Laravel</span><span>Django</span><span>React</span><span>Next.js</span><span>Flutter</span><span>Python</span><span>FastAPI</span><span>NestJS</span><span>PostgreSQL</span><span>TimescaleDB</span><span>Redis</span><span>Docker</span>
       </div>
     </div>
+
+    <!-- FEATURED -->
+    <section class="section wrap" id="featured">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow" data-reveal>Featured</span>
+          <h2 class="section__title" data-reveal data-reveal-delay="1">Real screens from <em>production</em></h2>
+        </div>
+        <span class="section__count" data-reveal data-reveal-delay="2">Click any project for the full case study</span>
+      </div>
+
+      <div class="feat-grid">
+        <a class="feat feat--lg" href="portfolio-details.html?p=lads" data-reveal>
+          <div class="frame">
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url">lads.ladsafrica.co.zw — Local Authority ERP</span></div>
+            <div class="frame__body"><img src="assets/img/shots/lads/cover.webp" alt="LADS Local Authority ERP dashboard" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/lads.svg'"></div>
+          </div>
+          <div class="feat__meta">
+            <div>
+              <h3 class="feat__title">LADS Local Authority ERP</h3>
+              <p class="feat__desc">Billing, licensing, land, procurement and statutory finance for 60+ councils, with ZIMRA fiscalization.</p>
+            </div>
+            <span class="work-cat feat__tag">Enterprise</span>
+          </div>
+        </a>
+
+        <a class="feat feat--phone" href="portfolio-details.html?p=minutepark" data-reveal data-reveal-delay="1">
+          <div class="phone"><img src="assets/img/shots/minutepark/cover.webp" alt="MinutePark parking-enforcement app" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/minutepark.svg'"></div>
+          <div class="feat__meta">
+            <div>
+              <h3 class="feat__title">MinutePark</h3>
+              <p class="feat__desc">Offline-first Flutter app for council parking attendants — tickets, thermal printing, two-way sync.</p>
+            </div>
+            <span class="work-cat feat__tag">Mobile</span>
+          </div>
+        </a>
+
+        <a class="feat feat--sm" href="portfolio-details.html?p=mineraerp" data-reveal>
+          <div class="frame">
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url">MineraERP — MMCZ</span></div>
+            <div class="frame__body"><img src="assets/img/shots/mineraerp/cover.webp" alt="MineraERP" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/mineraerp.svg'"></div>
+          </div>
+          <div class="feat__meta">
+            <div>
+              <h3 class="feat__title">MineraERP</h3>
+              <p class="feat__desc">Mining ERP with an IAS 16 accounting engine and ZIMRA / ASYCUDA customs integration.</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="feat feat--sm" href="portfolio-details.html?p=kestrel" data-reveal data-reveal-delay="1">
+          <div class="frame">
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url">Kestrel — fuel &amp; fleet telemetry</span></div>
+            <div class="frame__body"><img src="assets/img/shots/kestrel/cover.webp" alt="Kestrel fuel monitoring dashboard" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/trade.svg'"></div>
+          </div>
+          <div class="feat__meta">
+            <div>
+              <h3 class="feat__title">Kestrel Fleet &amp; Fuel</h3>
+              <p class="feat__desc">TimescaleDB + PostGIS telemetry platform that detects fuel loss with confidence scores.</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="feat feat--sm" href="portfolio-details.html?p=trade" data-reveal data-reveal-delay="2">
+          <div class="frame">
+            <div class="frame__bar"><i></i><i></i><i></i><span class="frame__url">Trade — algorithmic trading</span></div>
+            <div class="frame__body"><img src="assets/img/shots/trade/cover.webp" alt="Trading bot dashboard" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/trade.svg'"></div>
+          </div>
+          <div class="feat__meta">
+            <div>
+              <h3 class="feat__title">Trade — Trading Bot</h3>
+              <p class="feat__desc">Event-driven FastAPI + React platform with Deriv &amp; Alpaca brokers, backtesting and live WebSockets.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
 
     <!-- WORK -->
     <section class="section wrap" id="work">
@@ -90,12 +187,23 @@
           <span class="eyebrow" data-reveal>Selected Work</span>
           <h2 class="section__title" data-reveal data-reveal-delay="1">Systems I've <em>shipped</em></h2>
         </div>
-        <span class="section__count" data-reveal data-reveal-delay="2">10 projects — 2021→now</span>
+        <span class="section__count" data-reveal data-reveal-delay="2"><span id="workCount">17 projects</span> — 2021→now</span>
+      </div>
+
+      <div class="filters" data-reveal>
+        <button type="button" class="filter active" data-filter="all">All <span class="n">17</span></button>
+        <button type="button" class="filter" data-filter="enterprise">Enterprise ERP <span class="n">4</span></button>
+        <button type="button" class="filter" data-filter="platform">Platforms &amp; APIs <span class="n">6</span></button>
+        <button type="button" class="filter" data-filter="data">Data · AI · IoT <span class="n">3</span></button>
+        <button type="button" class="filter" data-filter="mobile">Mobile <span class="n">2</span></button>
+        <button type="button" class="filter" data-filter="web">Web <span class="n">2</span></button>
       </div>
 
       <div class="work-list" id="workList">
-        <a class="work-row" href="portfolio-details.html?p=lads" data-thumb="assets/img/portfolio/lads.svg" data-reveal>
+
+        <a class="work-row" href="portfolio-details.html?p=lads" data-cat="enterprise" data-thumb="assets/img/shots/lads/cover.webp" data-reveal>
           <span class="work-index">01</span>
+          <span class="work-thumb"><img src="assets/img/shots/lads/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/lads.svg'"></span>
           <span class="work-main">
             <span class="work-title">LADS Local Authority ERP</span>
             <span class="work-desc">Municipal revenue &amp; ERP platform — billing, licensing, land, financials with ZIMRA fiscalization. Used by 60+ councils.</span>
@@ -103,8 +211,10 @@
           <span class="work-meta"><span class="work-cat">Enterprise</span><span class="work-tags">Laravel · Livewire · MySQL</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=mineraerp" data-thumb="assets/img/portfolio/mineraerp.svg" data-reveal>
+
+        <a class="work-row" href="portfolio-details.html?p=mineraerp" data-cat="enterprise" data-thumb="assets/img/shots/mineraerp/cover.webp" data-reveal>
           <span class="work-index">02</span>
+          <span class="work-thumb"><img src="assets/img/shots/mineraerp/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/mineraerp.svg'"></span>
           <span class="work-main">
             <span class="work-title">MineraERP — Mining ERP</span>
             <span class="work-desc">ERP for the Minerals Marketing Corporation of Zimbabwe with an IAS 16 accounting engine and ZIMRA/ASYCUDA customs integration.</span>
@@ -112,8 +222,10 @@
           <span class="work-meta"><span class="work-cat">Enterprise</span><span class="work-tags">Laravel 13 · Livewire 4</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=mmcz-portal" data-thumb="assets/img/portfolio/mmcz-portal.svg" data-reveal>
+
+        <a class="work-row" href="portfolio-details.html?p=mmcz-portal" data-cat="platform" data-thumb="assets/img/shots/mmcz-portal/cover.webp" data-reveal>
           <span class="work-index">03</span>
+          <span class="work-thumb"><img src="assets/img/shots/mmcz-portal/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/mmcz-portal.svg'"></span>
           <span class="work-main">
             <span class="work-title">MMCZ Producer Portal</span>
             <span class="work-desc">Customer portal with in-app WebRTC video meetings &amp; calls, a BotMan chatbot with live-chat handoff, and e-commerce.</span>
@@ -121,8 +233,21 @@
           <span class="work-meta"><span class="work-cat">Real-time</span><span class="work-tags">Laravel · WebRTC · BotMan</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=minutepark" data-thumb="assets/img/portfolio/minutepark.svg" data-reveal>
+
+        <a class="work-row" href="portfolio-details.html?p=pbb" data-cat="enterprise" data-thumb="assets/img/shots/pbb/cover.webp" data-reveal>
           <span class="work-index">04</span>
+          <span class="work-thumb"><img src="assets/img/shots/pbb/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/lads.svg'"></span>
+          <span class="work-main">
+            <span class="work-title">PBB — Programme Based Budgeting</span>
+            <span class="work-desc">National budgeting platform for councils and the ministry, replacing a legacy Access workflow with a queued Excel import pipeline.</span>
+          </span>
+          <span class="work-meta"><span class="work-cat">GovTech</span><span class="work-tags">Laravel · Queues · PhpSpreadsheet</span></span>
+          <span class="work-arrow">↗</span>
+        </a>
+
+        <a class="work-row" href="portfolio-details.html?p=minutepark" data-cat="mobile" data-thumb="assets/img/shots/minutepark/cover.webp" data-reveal>
+          <span class="work-index">05</span>
+          <span class="work-thumb work-thumb--phone"><img src="assets/img/shots/minutepark/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.parentNode.className='work-thumb';this.src='assets/img/portfolio/minutepark.svg'"></span>
           <span class="work-main">
             <span class="work-title">MinutePark — Parking Enforcement</span>
             <span class="work-desc">Offline-first mobile system for council attendants: ticketing, Bluetooth thermal printing, and background two-way sync.</span>
@@ -130,8 +255,21 @@
           <span class="work-meta"><span class="work-cat">Mobile</span><span class="work-tags">Flutter · ObjectBox · Laravel</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=trade" data-thumb="assets/img/portfolio/trade.svg" data-reveal>
-          <span class="work-index">05</span>
+
+        <a class="work-row" href="portfolio-details.html?p=kestrel" data-cat="data" data-thumb="assets/img/shots/kestrel/cover.webp" data-reveal>
+          <span class="work-index">06</span>
+          <span class="work-thumb"><img src="assets/img/shots/kestrel/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/trade.svg'"></span>
+          <span class="work-main">
+            <span class="work-title">Kestrel — Fuel Monitoring &amp; Fleet Tracking</span>
+            <span class="work-desc">Multi-tenant telemetry platform on TimescaleDB + PostGIS that detects fuel loss, reconciles fuel-card purchases and costs idling.</span>
+          </span>
+          <span class="work-meta"><span class="work-cat">IoT &amp; Data</span><span class="work-tags">Fastify · Next.js · Timescale</span></span>
+          <span class="work-arrow">↗</span>
+        </a>
+
+        <a class="work-row" href="portfolio-details.html?p=trade" data-cat="data" data-thumb="assets/img/shots/trade/cover.webp" data-reveal>
+          <span class="work-index">07</span>
+          <span class="work-thumb"><img src="assets/img/shots/trade/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/trade.svg'"></span>
           <span class="work-main">
             <span class="work-title">Trade — Algorithmic Trading Bot</span>
             <span class="work-desc">Event-driven trading platform with real Deriv &amp; Alpaca broker integrations, backtesting, and WebSocket streaming.</span>
@@ -139,8 +277,10 @@
           <span class="work-meta"><span class="work-cat">AI &amp; Data</span><span class="work-tags">FastAPI · React · Redis</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=atm-biometric" data-thumb="assets/img/portfolio/atm-biometric.svg" data-reveal>
-          <span class="work-index">06</span>
+
+        <a class="work-row" href="portfolio-details.html?p=atm-biometric" data-cat="data" data-thumb="assets/img/shots/atm-biometric/cover.webp" data-reveal>
+          <span class="work-index">08</span>
+          <span class="work-thumb"><img src="assets/img/shots/atm-biometric/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/atm-biometric.svg'"></span>
           <span class="work-main">
             <span class="work-title">Biometric ATM System</span>
             <span class="work-desc">Self-service banking kiosk with WebAuthn fingerprint auth, AES-encrypted templates, and a risk/fraud engine.</span>
@@ -148,8 +288,10 @@
           <span class="work-meta"><span class="work-cat">Security</span><span class="work-tags">Django · React · WebAuthn</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=miss-universe" data-thumb="assets/img/portfolio/miss-universe.svg" data-reveal>
-          <span class="work-index">07</span>
+
+        <a class="work-row" href="portfolio-details.html?p=miss-universe" data-cat="platform" data-thumb="assets/img/shots/miss-universe/cover.webp" data-reveal>
+          <span class="work-index">09</span>
+          <span class="work-thumb"><img src="assets/img/shots/miss-universe/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/miss-universe.svg'"></span>
           <span class="work-main">
             <span class="work-title">Miss Universe Zimbabwe</span>
             <span class="work-desc">Three-app voting platform (API + admin + mobile) with a wallet economy and four payment gateways.</span>
@@ -157,8 +299,10 @@
           <span class="work-meta"><span class="work-cat">Platform</span><span class="work-tags">NestJS · Next.js · Flutter</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=sahwigate" data-thumb="assets/img/portfolio/sahwigate.svg" data-reveal>
-          <span class="work-index">08</span>
+
+        <a class="work-row" href="portfolio-details.html?p=sahwigate" data-cat="platform" data-thumb="assets/img/shots/sahwigate/cover.webp" data-reveal>
+          <span class="work-index">10</span>
+          <span class="work-thumb"><img src="assets/img/shots/sahwigate/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/sahwigate.svg'"></span>
           <span class="work-main">
             <span class="work-title">SahwiGate — Athletics API</span>
             <span class="work-desc">Production-grade backend with BullMQ job queues, Stripe payments, Swagger docs, and a full test suite.</span>
@@ -166,8 +310,43 @@
           <span class="work-meta"><span class="work-cat">Backend</span><span class="work-tags">Fastify · Prisma · BullMQ</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=medguardqr" data-thumb="assets/img/portfolio/medguardqr.svg" data-reveal>
-          <span class="work-index">09</span>
+
+        <a class="work-row" href="portfolio-details.html?p=realestate" data-cat="enterprise" data-thumb="assets/img/shots/realestate/cover.webp" data-reveal>
+          <span class="work-index">11</span>
+          <span class="work-thumb"><img src="assets/img/shots/realestate/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/lads.svg'"></span>
+          <span class="work-main">
+            <span class="work-title">Real Estate Management System</span>
+            <span class="work-desc">30-module property ERP — tenant KYC, leases, rent collection, double-entry GL, work orders and agent commissions.</span>
+          </span>
+          <span class="work-meta"><span class="work-cat">Enterprise</span><span class="work-tags">Laravel · Inertia · React 19</span></span>
+          <span class="work-arrow">↗</span>
+        </a>
+
+        <a class="work-row" href="portfolio-details.html?p=edubill" data-cat="platform" data-thumb="assets/img/shots/edubill/cover.webp" data-reveal>
+          <span class="work-index">12</span>
+          <span class="work-thumb"><img src="assets/img/shots/edubill/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/medguardqr.svg'"></span>
+          <span class="work-main">
+            <span class="work-title">EduBill — Tuition Billing</span>
+            <span class="work-desc">Idempotent monthly invoicing, oldest-first receipting with wallet credit, multi-currency tills and SMS arrears reminders.</span>
+          </span>
+          <span class="work-meta"><span class="work-cat">Fintech</span><span class="work-tags">Laravel 12 · Tailwind · Flutter</span></span>
+          <span class="work-arrow">↗</span>
+        </a>
+
+        <a class="work-row" href="portfolio-details.html?p=smartshop" data-cat="platform" data-thumb="assets/img/shots/smartshop/cover.webp" data-reveal>
+          <span class="work-index">13</span>
+          <span class="work-thumb"><img src="assets/img/shots/smartshop/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/sahwigate.svg'"></span>
+          <span class="work-main">
+            <span class="work-title">SmartShop 360 — Retail POS</span>
+            <span class="work-desc">Shop management &amp; point-of-sale with oversell-protected transactions, role-gated API, SPA on Vercel and API on Railway.</span>
+          </span>
+          <span class="work-meta"><span class="work-cat">Retail</span><span class="work-tags">React · Laravel · Sanctum</span></span>
+          <span class="work-arrow">↗</span>
+        </a>
+
+        <a class="work-row" href="portfolio-details.html?p=medguardqr" data-cat="platform" data-thumb="assets/img/shots/medguardqr/cover.webp" data-reveal>
+          <span class="work-index">14</span>
+          <span class="work-thumb"><img src="assets/img/shots/medguardqr/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/medguardqr.svg'"></span>
           <span class="work-main">
             <span class="work-title">MedGuardQR — Pharmacy System</span>
             <span class="work-desc">QR-driven medication dispensing &amp; inventory with low-stock/expiry alerts and dispense-interval safety rules.</span>
@@ -175,8 +354,10 @@
           <span class="work-meta"><span class="work-cat">Healthcare</span><span class="work-tags">Django · React · QR</span></span>
           <span class="work-arrow">↗</span>
         </a>
-        <a class="work-row" href="portfolio-details.html?p=conference-app" data-thumb="assets/img/portfolio/conference-app.svg" data-reveal>
-          <span class="work-index">10</span>
+
+        <a class="work-row" href="portfolio-details.html?p=conference-app" data-cat="mobile" data-thumb="assets/img/shots/conference-app/cover.webp" data-reveal>
+          <span class="work-index">15</span>
+          <span class="work-thumb work-thumb--phone"><img src="assets/img/shots/conference-app/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.parentNode.className='work-thumb';this.src='assets/img/portfolio/conference-app.svg'"></span>
           <span class="work-main">
             <span class="work-title">Conference Companion App</span>
             <span class="work-desc">Flutter event app with a fully offline Bible (KJV + Shona), text-to-speech, and full-text verse search.</span>
@@ -184,6 +365,29 @@
           <span class="work-meta"><span class="work-cat">Mobile</span><span class="work-tags">Flutter · Supabase · TTS</span></span>
           <span class="work-arrow">↗</span>
         </a>
+
+        <a class="work-row" href="portfolio-details.html?p=chikoto" data-cat="web" data-thumb="assets/img/shots/chikoto/cover.webp" data-reveal>
+          <span class="work-index">16</span>
+          <span class="work-thumb"><img src="assets/img/shots/chikoto/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/conference-app.svg'"></span>
+          <span class="work-main">
+            <span class="work-title">World Class Gases <span class="badge-live">Live</span></span>
+            <span class="work-desc">Static Astro site for an LPG retailer — cylinders, refills, equipment catalogue — with all copy driven from one data file.</span>
+          </span>
+          <span class="work-meta"><span class="work-cat">Web</span><span class="work-tags">Astro · TypeScript · Vercel</span></span>
+          <span class="work-arrow">↗</span>
+        </a>
+
+        <a class="work-row" href="portfolio-details.html?p=finance" data-cat="web" data-thumb="assets/img/shots/finance/cover.webp" data-reveal>
+          <span class="work-index">17</span>
+          <span class="work-thumb"><img src="assets/img/shots/finance/01-t.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/portfolio/trade.svg'"></span>
+          <span class="work-main">
+            <span class="work-title">District Finance Dashboard</span>
+            <span class="work-desc">Multi-tenant Next.js + Supabase dashboard for district income and expenditure with CSV import and DOCX/PDF statement exports.</span>
+          </span>
+          <span class="work-meta"><span class="work-cat">Dashboard</span><span class="work-tags">Next.js 16 · Supabase</span></span>
+          <span class="work-arrow">↗</span>
+        </a>
+
       </div>
     </section>
 
@@ -205,20 +409,21 @@
               Over 4+ years at LADS Africa I've helped design and ship platforms now used by more than 60
               local authorities — owning features end to end, from database schema and REST APIs to the UI
               and deployment. I'm comfortable across the stack: Laravel and Django on the backend, React and
-              Next.js on the frontend, Flutter for mobile, and Python for data and machine learning.
+              Next.js on the frontend, Flutter for mobile, and Python and TypeScript for data and services.
             </p>
             <p>
               I care about clean architecture, reliable systems, and details that hold up under load —
-              whether that's an offline-first sync engine, an IAS 16 accounting module, or a fraud engine
-              guarding a banking kiosk.
+              whether that's an offline-first sync engine, an IAS 16 accounting module, a time-series
+              fuel-loss detector, or a fraud engine guarding a banking kiosk.
             </p>
           </div>
 
           <ul class="stack" data-reveal data-reveal-delay="2">
             <li>PHP</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>Dart</li>
-            <li>Laravel</li><li>Django</li><li>React</li><li>Next.js</li><li>Flutter</li>
-            <li>FastAPI</li><li>NestJS</li><li>PostgreSQL</li><li>MySQL</li><li>Redis</li>
-            <li>Docker</li><li>Azure</li><li>scikit-learn</li>
+            <li>Laravel</li><li>Django</li><li>FastAPI</li><li>NestJS</li><li>Fastify</li>
+            <li>React</li><li>Next.js</li><li>Flutter</li><li>Astro</li>
+            <li>PostgreSQL</li><li>TimescaleDB</li><li>MySQL</li><li>Redis</li><li>Prisma</li>
+            <li>Docker</li><li>Azure</li><li>Vercel / Railway</li><li>scikit-learn</li>
           </ul>
         </div>
 
@@ -226,7 +431,7 @@
           <div class="stat-row" data-reveal>
             <div class="stat"><div class="n">4+</div><div class="l">Years shipping</div></div>
             <div class="stat"><div class="n">60+</div><div class="l">Councils served</div></div>
-            <div class="stat"><div class="n">10</div><div class="l">Featured builds</div></div>
+            <div class="stat"><div class="n">17</div><div class="l">Featured builds</div></div>
             <div class="stat"><div class="n">15+</div><div class="l">Team size</div></div>
           </div>
         </aside>
@@ -236,7 +441,17 @@
         <div class="cap" data-reveal><h4><span>①</span>Full-Stack Web</h4><p>ERPs, portals, and dashboards with Laravel, Django, React &amp; Next.js.</p></div>
         <div class="cap" data-reveal data-reveal-delay="1"><h4><span>②</span>Mobile</h4><p>Cross-platform Flutter apps — including offline-first field tools.</p></div>
         <div class="cap" data-reveal data-reveal-delay="2"><h4><span>③</span>Systems &amp; APIs</h4><p>REST APIs, integrations, queues, and multi-tenant architectures.</p></div>
-        <div class="cap" data-reveal data-reveal-delay="3"><h4><span>④</span>Data &amp; AI</h4><p>ML models, risk engines, and analytics with Python &amp; scikit-learn.</p></div>
+        <div class="cap" data-reveal data-reveal-delay="3"><h4><span>④</span>Data &amp; AI</h4><p>Time-series telemetry, risk engines, ML models and analytics with Python &amp; TypeScript.</p></div>
+      </div>
+
+      <div class="section__head section__head--spaced">
+        <span class="eyebrow" data-reveal>How I work</span>
+      </div>
+      <div class="process">
+        <div data-reveal><span class="n">01</span><h4>Understand the domain</h4><p>Fiscal law, council tariffs, mining contracts, tank calibration — I learn the rules before I write the schema.</p></div>
+        <div data-reveal data-reveal-delay="1"><span class="n">02</span><h4>Design for failure</h4><p>Offline-first sync, idempotent jobs, locked transactions and confidence scores instead of false certainty.</p></div>
+        <div data-reveal data-reveal-delay="2"><span class="n">03</span><h4>Ship end to end</h4><p>Schema, API, UI, PDFs, deployment and docs — I own the feature until it is in users' hands.</p></div>
+        <div data-reveal data-reveal-delay="3"><span class="n">04</span><h4>Prove it works</h4><p>Test suites, browser-tested runbooks and verification reports so clients can sign off with evidence.</p></div>
       </div>
     </section>
 
@@ -255,15 +470,25 @@
             <div class="exp-role">Software Developer</div>
             <div class="exp-co">LADS Africa · Harare, Zimbabwe</div>
             <ul class="exp-points">
-              <li>Built and maintained local-authority platforms now used by 60+ councils, spanning procurement, licensing, and CRM.</li>
+              <li>Built and maintained local-authority platforms now used by 60+ councils, spanning revenue, procurement, licensing, budgeting and CRM.</li>
+              <li>Delivered enterprise ERPs for national institutions including the Minerals Marketing Corporation of Zimbabwe.</li>
               <li>Worked in a 15+ engineer team designing scalable ERP features, owning modules from database schema to UI.</li>
-              <li>Developed Laravel &amp; Django backends integrated with React front-ends over well-structured REST APIs.</li>
               <li>Led feature deployments and drove debugging, performance optimization, and technical documentation.</li>
             </ul>
           </div>
         </div>
         <div class="exp-row" data-reveal>
-          <div class="exp-when">2021 — 2025</div>
+          <div class="exp-when">2026 — Present</div>
+          <div>
+            <div class="exp-role">Independent Consultant</div>
+            <div class="exp-co">Product builds for private clients</div>
+            <ul class="exp-points">
+              <li>Kestrel fuel-monitoring platform, SahwiGate athletics API, EduBill, SmartShop 360 and a real-estate ERP — architecture through delivery.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-row" data-reveal>
+          <div class="exp-when">2020 — 2025</div>
           <div>
             <div class="exp-role">B.Tech (Hons), Software Engineering</div>
             <div class="exp-co">Harare Institute of Technology</div>
@@ -300,7 +525,7 @@
           <input type="hidden" name="_subject" value="New message from portfolio">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-label="Leave this field empty" aria-hidden="true">
           <div class="two">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
@@ -323,6 +548,6 @@
   <!-- Floating work preview -->
   <div class="work-preview" id="workPreview" aria-hidden="true"><img src="" alt=""></div>
 
-  <script src="assets/js/site.js"></script>
+  <script src="assets/js/site.js?v=4"></script>
 </body>
 </html>
