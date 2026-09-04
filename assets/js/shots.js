@@ -114,54 +114,6 @@ window.SHOTS = {
    }
   ]
  },
- "minutepark": {
-  "kind": "mobile",
-  "cover": "assets/img/shots/minutepark/cover.webp",
-  "shots": [
-   {
-    "src": "assets/img/shots/minutepark/01.webp",
-    "thumb": "assets/img/shots/minutepark/01-t.webp",
-    "cap": "Attendant app — client selection on first run (Windows build of the Flutter app)",
-    "kind": "mobile"
-   },
-   {
-    "src": "assets/img/shots/minutepark/02.webp",
-    "thumb": "assets/img/shots/minutepark/02-t.webp",
-    "cap": "Council admin console — daily summary per client",
-    "kind": "web"
-   },
-   {
-    "src": "assets/img/shots/minutepark/03.webp",
-    "thumb": "assets/img/shots/minutepark/03-t.webp",
-    "cap": "Streets & bays register — 33 streets with bay counts",
-    "kind": "web"
-   },
-   {
-    "src": "assets/img/shots/minutepark/04.webp",
-    "thumb": "assets/img/shots/minutepark/04-t.webp",
-    "cap": "Multi-currency payment methods with per-currency rates",
-    "kind": "web"
-   },
-   {
-    "src": "assets/img/shots/minutepark/05.webp",
-    "thumb": "assets/img/shots/minutepark/05-t.webp",
-    "cap": "Offence catalogue with pricing",
-    "kind": "web"
-   },
-   {
-    "src": "assets/img/shots/minutepark/06.webp",
-    "thumb": "assets/img/shots/minutepark/06-t.webp",
-    "cap": "Staff and roles — supervisors, auditors, directors, attendants",
-    "kind": "web"
-   },
-   {
-    "src": "assets/img/shots/minutepark/07.webp",
-    "thumb": "assets/img/shots/minutepark/07-t.webp",
-    "cap": "Parking packages with approval workflow",
-    "kind": "web"
-   }
-  ]
- },
  "kestrel": {
   "kind": "web",
   "cover": "assets/img/shots/kestrel/cover.webp",

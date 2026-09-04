@@ -1,7 +1,7 @@
 /* Adonis T Mushonga — project case-study content.
    Screenshot manifests live in assets/js/shots.js (generated). */
 window.PROJECT_ORDER = [
-  "lads", "mineraerp", "mmcz-portal", "pbb", "minutepark", "kestrel", "trade", "atm-biometric",
+  "lads", "mineraerp", "mmcz-portal", "pbb", "kestrel", "trade", "atm-biometric",
   "miss-universe", "sahwigate", "realestate", "edubill", "smartshop", "medguardqr", "conference-app", "chikoto", "finance"
 ];
 
@@ -87,27 +87,6 @@ window.PROJECTS = {
       "Council-scoped reference data (programmes, fund sources, units, currencies, templates) seeded automatically when a client is created in Portal Admin.",
       "Human-capital budgeting, tariff schedules and consolidated reports for ministry review.",
       "Public landing site with guide for councils, FAQ and sign-in into the budgeting workspace."
-    ],
-    links: {}
-  },
-  "minutepark": {
-    title: "MinutePark — Parking Enforcement",
-    tagline: "An offline-first mobile system that lets council parking attendants work reliably with no connectivity.",
-    category: "Mobile · Full-Stack", cat: "mobile", kind: "mobile", url: "MinutePark · Android",
-    role: "Software Developer (mobile + backend)", timeline: "2021 – Present",
-    client: "Municipal councils", status: "In production (v3.9.5)",
-    stack: ["Flutter","Dart","ObjectBox","WorkManager","Laravel 10","Octane","Sanctum","ESC/POS Printing","mobile_scanner"],
-    overview: [
-      "MinutePark is a smart parking-enforcement product for councils. Attendants check vehicles in, issue tickets and booklets, bill offences, manage arrears, run spot checks, and reconcile takings through cash-ups — all designed to work offline on handheld devices with Bluetooth thermal printing and QR scanning.",
-      "The engineering challenge is reliability without connectivity: the app is offline-first and syncs two-way with a Laravel API when a connection returns."
-    ],
-    metrics: [{n:"v3.9.5",l:"Mature product"},{n:"~22",l:"App screens"},{n:"46",l:"API endpoints"},{n:"45",l:"Backend models"}],
-    highlights: [
-      "Architected the offline-first data layer with ObjectBox and a WorkManager background isolate performing periodic two-way sync.",
-      "Designed eventual-consistency sync — records created offline are tagged and pushed to dedicated sync endpoints once online.",
-      "Integrated Bluetooth ESC/POS thermal receipt printing and QR/barcode scanning for on-the-spot ticketing.",
-      "Implemented offline bcrypt login plus Sanctum token auth, with the backend multi-tenant per council.",
-      "Modelled multi-currency payment methods with per-currency rates and discounts, reconciled through cash-ups."
     ],
     links: {}
   },
